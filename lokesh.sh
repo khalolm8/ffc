@@ -1,1 +1,1 @@
-ffmpeg -stream_loop -1 -i "lokesh.mp4" -lavfi 'scale=1280:720' -deinterlace -vcodec libx264 -pix_fmt yuv420p -preset veryfast -r 30 -g 60 -b:v 2500k -acodec libmp3lame -ar 44100 -threads 6 -qscale 3 -b:a 712000 -bufsize 512k -f flv
+ffmpeg -stream_loop -1 -i "lokesh.mp4" -lavfi 'scale=1280:720' -deinterlace -vcodec libx264 -pix_fmt yuv420p -preset veryfast -r 30 -g 60 -b:v 2500k -acodec libmp3lame -ar 44100 -threads 6 -qscale 3 -b:a 712000 -bufsize 512k -f flv "rtmps://live-api-s.facebook.com:443/rtmp/108052284580344?s_bl=1&s_ps=1&s_psm=1&s_sw=0&s_vt=api-s&a=AbwGHxLuSbhk9OkN"
